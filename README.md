@@ -50,7 +50,9 @@ below 3 create way explains how candidate default routers get to a router's rout
        
        routes created by dynamic routing protocol, such as RIP or OSPF
 
-(2)
+(2) By entering one or several ip addr as below cmd, all routes whose network prefixes == ip addr, param of command, thus become candidate default routes.
+
+       ip default-network <IP addr>
 
 (3)
 
