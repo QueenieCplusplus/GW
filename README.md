@@ -127,6 +127,12 @@ the routing table then changed as following
              I - IGRP
        
       Gateway of last resort is not set
+      
+      I 192.168.31.0/24 [100/10576] via 10.0.1.1 00:00:05. Serial0
+                         
+                         ... (others)
+                         
+      C 192.168.100.0/24 is directly connected. Ethernet0
      
 
 (to be continued...)
