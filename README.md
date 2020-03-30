@@ -56,4 +56,18 @@ below 3 create way explains how candidate default routers get to a router's rout
 
 (3) In IGRP, advertising network prefixes as exterior, thus the routes become candidate default routes.
 
+# to choose the best in the Candidate Default Routes
+
+1. If any candidate default connected routes is present, then exclude them from the list.
+
+2. If several candidate default routes exist, only the one with the smallest admin distance are kept, if there is only one, then it means this is the one that chosen by algorithm.
+
+3. step1 , the one chosen by the smallest metric.
+
+4. step2, there are several result, then choose the one that created first.
+
+# to create the GW of last resort
+
+
+
 (to be continued...)
