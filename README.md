@@ -68,6 +68,8 @@ below 3 create way explains how candidate default routers get to a router's rout
 
 # to create the GW of last resort
 
+If the router decides to create the GW of the last resort, it makes itself equal to the IP addr of the next-hop router of the chosen candidate default route.
+
 a. Connected Created Routes, the router creates the GW of the last resort.
 
 b. Statice Created Routes, the algorithm creates the GW of the last resort.
