@@ -76,6 +76,57 @@ b. Statice Created Routes, the algorithm creates the GW of the last resort.
 
 c. Dynamic Created Routes, the algorithm does not create GW of the last resort.
 
+# Routing Table of Router
 
+    R0$ show ip route
+
+
+    Codes: R - RIP
+           O - OSPF
+           S - Stactic
+           U - Per User Static Route
+           B - BGP
+           i - IS-IS
+           * - Candidate Default
+           D - EIGRP
+           I - IGRP
+       
+    Gateway at last resort is 10.0.1.1 to network 192.168.31.o0
+       
+      I 192.168.31.0/24 [100/10576] via 10.0.1.1 00:00:05. Serial0
+      |          |       | |           |                      |
+      V          |       | |           V                      |
+      source of routing info           Next Hop Router        V
+                 |       | |                                  Output of interface
+                 V       | V
+                 Mask    V metrics
+                         Distance of Route
+                         
+                         ... (others)
+                         
+      C 192.168.100.0/24 is directly connected. Ethernet0
+         
+if below cmd executes
+  
+      R0$ ip default-network 192.168.100.0
+      > this cmd makes the connected route thru interface E0 a candidate default route.
+      
+the routing table then changed as following
+                  
+      R0$ show ip route
+
+
+      Codes: R - RIP
+             O - OSPF
+             S - Stactic
+             U - Per User Static Route
+             B - BGP
+             i - IS-IS
+             * - Candidate Default
+             D - EIGRP
+             I - IGRP
+       
+      Gateway of last resort is not set
+     
 
 (to be continued...)
