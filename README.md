@@ -134,8 +134,10 @@ the routing table then changed as following
                          
       C 192.168.100.0/24 is directly connected. Ethernet0
 
-if add below cmd to config 
+if add below cmd to config for Static Source Routes
 
-      $ip route 172.30.0.0 255...
+      $ip route 172.30.0.0 255.255.0.0 192.168.100.40
+
+      R2$ip route <remote IP addr> <subnetmask> <next hop Router>
 
 (to be continued...)
