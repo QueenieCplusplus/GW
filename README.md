@@ -139,5 +139,9 @@ if add below cmd to config for Static Source Routes
       $ip route 172.30.0.0 255.255.0.0 192.168.100.40
 
       R2$ip route <remote IP addr> <subnetmask> <next hop Router>
+      
+then make it as a candidate deafault route.
+
+       $ip default-netwrok 172.30.0.0
 
 (to be continued...)
