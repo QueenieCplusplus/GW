@@ -8,20 +8,20 @@ Below Graphic shows that a AS (Atonomous System) has multiple connections to the
                                        /
                                       /
                                      /
-                                   IR1      
-
-                                                R3
-                         R1            
-
-
-                                     AS
-
-    to the internet --- IR2
-                                                 IR3
-                                                  \
-                                                   \
-                                    R2              \ 
-                                                    to the internet
+                             _____ IR1______     
+                            /               \
+                          /                  \    
+                         R1                   R3
+                         |                     |
+                         |                     |
+                         |          AS         |
+                         |                     |
+    to the internet --- IR2                    |
+                          \                   IR3
+                           \                  /    \
+                            \_____     ______/      \
+                                    R2               \ 
+                                                      to the internet
 
 
 Cisco's Routing Algortithm (nomatter the classful or classless) is extended by the concept of the GW of last resort.
