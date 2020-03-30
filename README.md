@@ -32,6 +32,10 @@ The GW of last resort is a router that receive the traffic whose destination has
 
 Hosts have small routing tables typically, thus use the deafault GW intensively (hosts have no many choices). On contrast, routers have big routing table, thus shall only use the GW of last resort. (Routers have several next-hop routers, and shall choose one that is the closest to traffic destination.)
 
+# Router in connection to the Internet
 
+The number of routes in Internet is huge, and making the routers of all network conected to the Internet to learn, it shall create excessive loads on these routers.
+
+This loading can be avoided by utilizing the GW of last resort on these Routers, thus if the destination of some traffic is not found inside the network, it still can be accessible thru Internet.
 
 (to be continued...)
