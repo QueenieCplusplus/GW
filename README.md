@@ -38,4 +38,20 @@ The number of routes in Internet is huge, and making the routers of all network 
 
 This loading can be avoided by utilizing the GW of last resort on these Routers, thus if the destination of some traffic is not found inside the network, it still can be accessible thru Internet.
 
+# Candidate Default Routes
+
+before a router choose the GW if the last resort, it shall have the candidate default routes.
+
+below 3 create way explains how candidate default routers get to a router's routing table.
+
+(1)All routes for network prefix 0.0.0.0/0 become the candidate default route.
+
+       pseudo-connected routes == static routes pointing to an interface
+       
+       routes created by dynamic routing protocol, such as RIP or OSPF
+
+(2)
+
+(3)
+
 (to be continued...)
