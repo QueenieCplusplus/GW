@@ -54,6 +54,6 @@ below 3 create way explains how candidate default routers get to a router's rout
 
        ip default-network <IP addr>
 
-(3)
+(3) In IGRP, advertising network prefixes as exterior, thus the routes become candidate default routes.
 
 (to be continued...)
