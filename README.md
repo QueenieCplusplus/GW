@@ -133,6 +133,9 @@ the routing table then changed as following
                          ... (others)
                          
       C 192.168.100.0/24 is directly connected. Ethernet0
-     
+
+if add below cmd to config 
+
+      $ip route 172.30.0.0 255...
 
 (to be continued...)
