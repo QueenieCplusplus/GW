@@ -1,5 +1,5 @@
 # GW
-default gateway
+default gateway GW == default router of hosts.
 
 Below Graphic shows that a AS (Atonomous System) has multiple connections to the Internet.
 
