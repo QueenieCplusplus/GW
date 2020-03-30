@@ -68,6 +68,12 @@ below 3 create way explains how candidate default routers get to a router's rout
 
 # to create the GW of last resort
 
+a. Connected Created Routes, the router creates the GW of the last resort.
+
+b. Statice Created Routes, the algorithm creates the GW of the last resort.
+
+c. Dynamic Created Routes, the algorithm does not create GW of the last resort.
+
 
 
 (to be continued...)
